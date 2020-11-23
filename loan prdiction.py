@@ -37,4 +37,5 @@ frequent = ['Gender', 'Married', 'Loan_Amount_Term', 'Self_Employed', 'Credit_Hi
 
 for i in df.columns:
     if df[i].isnull().values.any() == True:
-        df[i]=replace_missing(df[i], np.nan, 'constant',df[i].mode()[0])
+        df[i] = replace_missing(df[i], np.nan, 'constant',df[i].mode()[0])
+
